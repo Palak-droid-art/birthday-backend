@@ -1,3 +1,9 @@
+console.log("Checking environment variables...");
+if (!process.env.MONGO_URI) {
+    console.error("❌ ERROR: MONGO_URI is missing!");
+} else {
+    console.log("✅ MONGO_URI is detected.");
+}
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
