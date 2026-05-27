@@ -12,7 +12,7 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const cloudinary = require('cloudinary').v2;
 
 const app = express();
-app.use(cors());
+app.use(cors());    
 app.use(express.json());
 
 cloudinary.config({
